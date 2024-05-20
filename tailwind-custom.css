@@ -1,0 +1,5 @@
+@layer utilities {
+    input[type="search"]::-webkit-search-cancel-button {
+        @apply hidden;
+    }
+}

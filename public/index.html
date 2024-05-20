@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato - Clone</title>
+    <link rel="icon" type="image/x-icon" href="https://cdn.iconscout.com/icon/free/png-512/free-zomato-1937646-1637644.png?f=webp&w=256">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- header section starts here -->
+    <div class="flex flex-col justify-normal object-cover overflow-hidden">
+        <img class="w-full h-[421px] object-cover absolute pointer-events-none"
+            src="https://b.zmtcdn.com/web_assets/81f3ff974d82520780078ba1cfbd453a1583259680.png" alt="">
+        <!-- navbar starts here -->
+        <nav class="flex justify-between mx-5 relative lg:justify-evenly lg:mx-0">
+            <div class="flex justify-start my-6 md:mr-11 md:ml-5 font-medium text-base text-white hover:cursor-pointer">
+                Get the app
+            </div>
+            <ul class="hidden sm:flex justify-end text-lg text-white font-medium">
+                <li class="mr-5 md:mr-11 my-6 hover:cursor-pointer">Investor Relations
+                </li>
+                <li class="mr-5 md:mr-11 my-6 hover:cursor-pointer">Add restaurant</li>
+                <li class="mr-5 md:mr-11 my-6 hover:cursor-pointer">Login</li>
+                <li class="mr-5 md:mr-11 my-6 hover:cursor-pointer">Signup</li>
+            </ul>
+        </nav>
+        <!-- navbar starts here -->
+        <div class="flex justify-center h-auto w-full mt-6">
+            <img class="relative w-72 h-auto"
+                src="https://b.zmtcdn.com/web_assets/8313a97515fcb0447d2d77c276532a511583262271.png" alt="">
+        </div>
+        <div class="flex justify-center my-9">
+            <p class="relative text-white text-xl sm:text-2xl md:text-4xl font-sans xl:text-[38px]">Discover the best
+                food & drinks in
+                Delhi NCR</p>
+        </div>
+        <div class="relative flex justify-center mb-[150px] h-[52px]">
+            <div
+                class="flex flex-col md:flex-row relative justify-center items-center bg-white rounded-lg mx-2 w-full md:w-auto">
+                <div
+                    class="flex justify-start pl-4 w-full md:w-60 border-r-[2px] border-gray-400 select-none text-gray-600">
+                    <img class="w-6 h-6 mt-2 pointer-events-none select-none"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Map_pin_icon.svg/352px-Map_pin_icon.svg.png"
+                        alt="">
+                    <input class="h-10 px-3 text-[16px] font-[350px] outline-none hover:cursor-text" type="search"
+                        placeholder="Ycwa, 1, Ashoka Rd, Hanu">
+                </div>
+                <div class="flex justify-start pl-2 w-full md:w-[33rem] mt-2 md:mt-0 select-none text-gray-600">
+                    <img class="w-6 h-6 mr-3 mt-2 pointer-events-none fill-gray-600"
+                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/768px-Search_Icon.svg.png"
+                        alt="">
+                    <input class="w-[28rem] h-10 pr-3 text-[16px] font-[350px] outline-none hover:cursor-text"
+                        type="search" placeholder="Search for restaurant, cuisine or a dish">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- header section ends here -->
+
+    <!-- function cards -->
+    <div class="mt-3.5 flex justify-between lg:justify-center mb-6 xl:mb-12">
+        <!-- 3 cards here -->
+        <div
+            class="mx-[10px] mb-3 rounded-xl hover:cursor-pointer hover:scale-105 transition duration-300 border-[1px] border-slate-200">
+            <img class="rounded-t-xl w-[355px] h-[170px] object-cover"
+                src="https://b.zmtcdn.com/webFrontend/e5b8785c257af2a7f354f1addaf37e4e1647364814.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                alt="">
+            <div class="mx-5 my-2">
+                <p class="z-10 font-sm text-xl">Order Online</p>
+                <p class="mb-3 text-slate-600">Stay home and order to your doorstep</p>
+            </div>
+        </div>
+        <div
+            class="mx-[10px] mb-3 rounded-xl hover:cursor-pointer hover:scale-105 transition duration-300 border-[1px] border-slate-200">
+            <img class="rounded-t-xl w-[355px] h-[170px] object-cover"
+                src="https://b.zmtcdn.com/webFrontend/d026b357feb0d63c997549f6398da8cc1647364915.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                alt="">
+            <div class="mx-5 my-2">
+                <p class="z-10 font-sm text-xl">Dining</p>
+                <p class="mb-3 text-slate-600">View the city's favourite dining venues</p>
+            </div>
+        </div>
+        <div
+            class="mx-[10px] mb-3 rounded-xl hover:cursor-pointer hover:scale-105 transition duration-300 border-[1px] border-slate-200">
+            <img class="rounded-t-xl w-[355px] h-[170px] object-cover"
+                src="https://b.zmtcdn.com/webFrontend/d9d80ef91cb552e3fdfadb3d4f4379761647365057.jpeg?output-format=webp&fit=around|402:360&crop=402:360;*,*"
+                alt="">
+            <div class="mx-5 my-2 h-16">
+                <p class="z-10 font-sm text-xl">Nightlife and Clubs</p>
+                <p class="mb-3 text-slate-600">Explore the city's top nightlife outlets</p>
+            </div>
+        </div>
+    </div>
+    <!-- function cards ends here -->
+    <!-- collections starts here -->
+    <div class="flex justify-center mb-24">
+        <div class="w-[1100px]">
+            <div class="mb-8 mx-2">
+                <h2 class="lg:font-[450px] text-4xl pb-3">Collections</h2>
+                <div class="flex justify-between">
+                    <p class="lg:text-lg font-normal text-slate-600">Explore curated lists of top restaurants, cafes,
+                        pubs,
+                        and bars in
+                        Delhi NCR, based on trends</p>
+                    <p class="lg:text-lg font-normal ml-5 text-pink-600 hover:cursor-pointer">All collections in Delhi
+                        NCR</p>
+                </div>
+            </div>
+            <!-- 4 cards here -->
+            <div class="flex xl:justify-between justify-evenly">
+
+                <div class="mx-1 lg:mx-1.5 lg:h-[330px] shadow-inner hover:cursor-pointer relative">
+                    <div class="relative">
+                        <img class="w-[270px] h-[330px] rounded-lg object-cover"
+                            src="https://b.zmtcdn.com/data/collections/684397cd092de6a98862220e8cc40aca_1709810183.png?output-format=webp"
+                            alt="">
+                            <!-- Overlay to create vignette effect -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50 rounded-lg"></div>
+                    </div>
+                    <div class="text-white font-[450px] h-14 absolute bottom-1 w-[90%] mx-2 pl-2">
+                        <p class="text-xl">Top Trending spots</p>
+                        <p class="text-base">36 places</p>
+                    </div>
+                </div>
+
+                <div class="mx-1 lg:mx-1.5 lg:h-[330px] shadow-inner hover:cursor-pointer relative">
+                    <div class="relative">
+                        <img class="w-[270px] h-[330px] rounded-lg object-cover"
+                            src="https://b.zmtcdn.com/data/collections/908aad87392ba1f9526e7b483b94d124_1711107868.jpg?output-format=webp"
+                            alt="">
+                            <!-- Overlay to create vignette effect -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50 rounded-lg"></div>
+                    </div>
+                    <div class="text-white font-[450px] h-14 absolute bottom-1 w-[90%] mx-2 pl-2">
+                        <p class="text-xl">Best of live screenings</p>
+                        <p class="text-base">46 places</p>
+                    </div>
+                </div>
+
+                <div class="mx-1 lg:mx-1.5 lg:h-[330px] shadow-inner hover:cursor-pointer relative">
+                    <div class="relative">
+                        <img class="w-[270px] h-[330px] rounded-lg object-cover"
+                            src="https://b.zmtcdn.com/data/collections/7771cf3a18e1da2916794d3998260c69_1705557723.png?output-format=webp"
+                            alt="">
+                            <!-- Overlay to create vignette effect -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50 rounded-lg"></div>
+                    </div>
+                    <div class="text-white font-[450px] h-14 absolute bottom-1 w-[90%] mx-2 pl-2">
+                        <p class="text-xl">Newly Opened Places</p>
+                        <p class="text-base">8 places</p>
+                    </div>
+                </div>
+
+                <div class="mx-1 lg:mx-1.5 lg:h-[330px] shadow-inner hover:cursor-pointer relative">
+                    <div class="relative">
+                        <img class="w-[270px] h-[330px] rounded-lg object-cover"
+                            src="https://b.zmtcdn.com/data/collections/fbd237478a5d3b6ea08de83c30230cdd_1705558245.png?output-format=webp"
+                            alt="">
+                        <!-- Overlay to create vignette effect -->
+                        <div class="absolute inset-0 bg-gradient-to-r from-black via-transparent to-black opacity-50 rounded-lg"></div>
+                    </div>
+                    <div class="text-white font-[450] h-14 absolute bottom-1 w-[90%] mx-2 pl-2">
+                        <p class="text-xl">Best Insta-worthy Places</p>
+                        <p class="text-base">24 places</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <!-- cards end here  -->
+    </div>
+    <!-- collections ends here  -->
+    <!-- outlet locations starts here  -->
+    <div class="flex justify-center w-full mb-[102px]">
+        <div class="w-[1110px] mx-2">
+            <div class="mb-3 text-4xl font-normal lg:font-[450px] pb-3">Popular localities in and around Delhi NCR</div>
+            <div class="block">
+                <div class="flex flex-wrap relative">
+                    <div class="block pr-[10px] pb-[15px] max-w-[33.33%] w-[100%] mb-[5px]">
+                        <div
+                            class="px-[15px] py-[12px] border-[0.8px] border-[#e8e8e8] rounded-lg hover:cursor-pointer hover:shadow-md">
+                            <div class="w-[calc(100%-3.5rem)]">
+                                <h5 class="mb-[5px] text-xl font-[350px]">Connaught Place</h5>
+                                <p class="font-[350px]">276 places</p>
+                            </div>
+                            <i class="w-[3.5rem]"></i>
+                        </div>
+                    </div>
+                    <div class="block px-[5px] pb-[15px] max-w-[33.33%] w-[100%] mb-[5px]">
+                        <div
+                            class="px-[15px] py-[12px] border-[0.8px] border-[#e8e8e8] rounded-lg hover:cursor-pointer hover:shadow-md">
+                            <div class="w-[calc(100%-3.5rem)]">
+                                <h5 class="mb-[5px] text-xl font-[350px]">Sector 29</h5>
+                                <p class="font-[350px]">276 places</p>
+                            </div>
+                            <i class="w-[3.5rem]"></i>
+                        </div>
+                    </div>
+                    <div class="block pl-[10px] pb-[15px] max-w-[33.33%] w-[100%] mb-[5px]">
+                        <div
+                            class="px-[15px] py-[12px] border-[0.8px] border-[#e8e8e8] rounded-lg hover:cursor-pointer hover:shadow-md">
+                            <div class="w-[calc(100%-3.5rem)]">
+                                <h5 class="mb-[5px] text-xl font-[350px]">Sector 18, Noida</h5>
+                                <p class="font-[350px]">276 places</p>
+                            </div>
+                            <i class="w-[3.5rem]"></i>
+                        </div>
+                    </div>
+                    <div class="block pr-[10px] pb-[15px] max-w-[33.33%] w-[100%] mb-[5px]">
+                        <div
+                            class="px-[15px] py-[12px] border-[0.8px] border-[#e8e8e8] rounded-lg hover:cursor-pointer hover:shadow-md">
+                            <div class="w-[calc(100%-3.5rem)]">
+                                <h5 class="mb-[5px] text-xl font-[350px]">Rajouri Garden</h5>
+                                <p class="font-[350px]">276 places</p>
+                            </div>
+                            <i class="w-[3.5rem]"></i>
+                        </div>
+                    </div>
+                    <div class="block px-[5px] pb-[15px] max-w-[33.33%] w-[100%] mb-[5px]">
+                        <div
+                            class="px-[15px] py-[12px] border-[0.8px] border-[#e8e8e8] rounded-lg hover:cursor-pointer hover:shadow-md">
+                            <div class="w-[calc(100%-3.5rem)]">
+                                <h5 class="mb-[5px] text-xl font-[350px]">Saket</h5>
+                                <p class="font-[350px]">276 places</p>
+                            </div>
+                            <i class="w-[3.5rem]"></i>
+                        </div>
+                    </div>
+                    <div class="block pl-[10px] pb-[15px] max-w-[33.33%] w-[100%] mb-[5px]">
+                        <div
+                            class="px-[15px] py-[12px] border-[0.8px] border-[#e8e8e8] rounded-lg hover:cursor-pointer hover:shadow-md">
+                            <div class="w-[calc(100%-3.5rem)]">
+                                <h5 class="mb-[5px] text-xl font-[350px]">DLF Cyber City</h5>
+                                <p class="font-[350px]">276 places</p>
+                            </div>
+                            <i class="w-[3.5rem]"></i>
+                        </div>
+                    </div>
+                    <div class="block pr-[10px] pb-[15px] max-w-[33.33%] w-[100%] mb-[5px]">
+                        <div
+                            class="px-[15px] py-[12px] border-[0.8px] border-[#e8e8e8] rounded-lg hover:cursor-pointer hover:shadow-md">
+                            <div class="w-[calc(100%-3.5rem)]">
+                                <h5 class="mb-[5px] text-xl font-[350px]">Golf Course Road</h5>
+                                <p class="font-[350px]">276 places</p>
+                            </div>
+                            <i class="w-[3.5rem]"></i>
+                        </div>
+                    </div>
+                    <div class="block px-[5px] pb-[15px] max-w-[33.33%] w-[100%] mb-[5px]">
+                        <div
+                            class="px-[15px] py-[12px] border-[0.8px] border-[#e8e8e8] rounded-lg hover:cursor-pointer hover:shadow-md">
+                            <div class="w-[calc(100%-3.5rem)]">
+                                <h5 class="mb-[5px] text-xl font-[350px]">DLF Phase 4</h5>
+                                <p class="font-[350px]">276 places</p>
+                            </div>
+                            <i class="w-[3.5rem]"></i>
+                        </div>
+                    </div>
+                    <div class="block pl-[10px] pb-[15px] max-w-[33.33%] w-[100%] mb-[5px]">
+                        <div
+                            class="px-[15px] py-[12px] border-[0.8px] border-[#e8e8e8] rounded-lg hover:cursor-pointer hover:shadow-md">
+                            <div class="flex justify-center w-[100%] h-[55px] items-center">
+                                <h5 class="mb-[5px] text-lg font-[350px]">see more</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- outlet locations ends here  -->
+    <!-- form section starts here  -->
+    <div class="flex justify-center items-center bg-[#fffbf7] h-[480px]  mb-12">
+        <div class="flex relative justify-center items-center">
+            <img class="w-[250px] h-[270px]"
+            src="https://b.zmtcdn.com/data/o2_assets/f773629053b24263e69f601925790f301680693809.png" alt="">
+            <div class="w-[446px] h-[22rem] mx-14 ">
+                <h1 class="font-normal text-5xl pb-5 pt-2">Get the Zomato app</h1>
+                <p class="pb-6">We will send you a link, open it on your phone to download the app</p>
+                <!-- radios  -->
+                <div class="flex mb-2">
+                    <div class="flex items-center text-lg mr-4">
+                        <input class="mx-2 w-5 h-5" id="email" type="radio" name="contact" value="Email" class="mr-1">
+                        <label for="email" >Email</label>
+                    </div>
+                    <div class="flex items-center text-lg">
+                        <input class="mx-2 w-5 h-5" id="phone" type="radio" name="contact" value="Phone" class="mr-1">
+                        <label for="phone">Phone</label>
+                    </div>
+                </div>
+                <!-- input field  -->
+                <div class="flex justify-center w-full h-12 mb-7">
+                    <div class="flex items-center justify-center w-[70%] border-2 mr-4 rounded-md bg-white">
+                        <input class="outline-none w-[90%] text-lg" type="search" placeholder="Email">
+                    </div>
+                    <div class="flex items-center justify-center w-[30%] mr-3 rounded-md bg-red-500 hover:cursor-pointer hover:bg-red-600 text-white select-none">Share App Link</div>
+                </div>
+                <p class="text-sm mb-3">Download App Now</p>
+                <div class="flex h-10">
+                    <img class="mr-5 hover:cursor-pointer" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
+                    <img class=" hover:cursor-pointer" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- form section ends here  -->
+    <!-- FAQ section starts  -->
+    <div class="flex justify-center mx-2 mb-8">
+        <div class="w-[1100px]">
+            <div class="text-3xl font-normal mb-6">Explore options near me</div>
+            <div
+                class="px-4 my-4 border-[0.8px] h-[60px] lg:h-[70px] rounded-lg flex justify-between items-center text-xl text-stone-700 hover:cursor-pointer">
+                <p class="">Popular cusines near me</p>
+                <p class="w-8 h-8 select-none">&#8964;</p>
+            </div>
+            <div
+                class="px-4 my-4 border-[0.8px] h-[60px] lg:h-[70px] rounded-lg flex justify-between items-center text-xl text-stone-700 hover:cursor-pointer">
+                <p>Popular restaurant near me</p>
+                <p class="w-8 h-8 select-none">&#8964;</p>
+            </div>
+            <div
+                class="px-4 my-4 border-[0.8px] h-[60px] lg:h-[70px] rounded-lg flex justify-between items-center text-xl text-stone-700 hover:cursor-pointer">
+                <p>Top Restaurant Chains</p>
+                <p class="w-8 h-8 select-none">&#8964;</p>
+            </div>
+            <div
+                class="px-4 my-4 border-[0.8px] h-[60px] lg:h-[70px] rounded-lg flex justify-between items-center text-xl text-stone-700 hover:cursor-pointer">
+                <p>Cities We Deliver To</p>
+                <p class="w-8 h-8 select-none">&#8964;</p>
+            </div>
+        </div>
+    </div>
+    <!-- FAQ section ends here -->
+    <!-- footer starts here  -->
+    <footer class="flex justify-center w-full h-[480px] bg-[#f8f8f8]">
+        <div class="flex flex-col w-[1100px]">
+            <div class="flex justify-between items-center mb-1 h-[25%]">
+                <div>
+                    <img class="h-7" src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&crop=198:42;*,*" alt="">
+                </div>
+                <div class="flex w-[23%] h-9 text-lg font-light">
+                    <div class="mr-4 w-[50%] rounded-md border-[0.8px] border-gray-400 flex justify-between items-center select-none">
+                        <img class="ml-1 h-4" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/120px-Flag_of_India.svg.png?20230723002237" alt="">
+                        <p class="w-[70%] hover:cursor-pointer ">India</p>
+                    </div>
+                    <div class="w-[50%] rounded-md border-[0.8px] border-gray-400 flex justify-between items-center select-none">
+                        <img class="ml-1 h-6" src="https://png.pngtree.com/png-vector/20190118/ourmid/pngtree-vector-globe-icon-png-image_323859.jpg" alt="">
+                        <p class="w-[70%] hover:cursor-pointer ">English</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-between border-b-[2px] border-gray-300 my-2 h-[60%] px-2">
+                <div>
+                    <h4 class="py-2">ABOUT ZOMATO</h4>
+                    <ul class="font-light">
+                        <li class="hover:cursor-pointer w-fit">Who We Are</li>
+                        <li class="hover:cursor-pointer w-fit">Blog</li>
+                        <li class="hover:cursor-pointer w-fit">Work with us</li>
+                        <li class="hover:cursor-pointer w-fit">Investor Relations</li>
+                        <li class="hover:cursor-pointer w-fit">Report Fraud</li>
+                        <li class="hover:cursor-pointer w-fit">Press Kit</li>
+                        <li class="hover:cursor-pointer w-fit">Contact Us</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="py-2">ZOMAVERSE</h4>
+                    <ul class="font-light">
+                        <li class="hover:cursor-pointer w-fit">Zomato</li>
+                        <li class="hover:cursor-pointer w-fit">Blinkit</li>
+                        <li class="hover:cursor-pointer w-fit">Feeding India</li>
+                        <li class="hover:cursor-pointer w-fit">Hyperpure</li>
+                        <li class="hover:cursor-pointer w-fit">Zomaland</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="py-2">FOR RESTAURANTS</h4>
+                    <ul class="font-light">
+                        <li class="hover:cursor-pointer w-fit">Partner With Us</li>
+                        <li class="hover:cursor-pointer w-fit">Apps For You</li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="py-2">LEARN MORE</h4>
+                    <ul class="font-light">
+                        <li class="hover:cursor-pointer w-fit">Privacy</li>
+                        <li class="hover:cursor-pointer w-fit">Security</li>
+                        <li class="hover:cursor-pointer w-fit">Terms</li>
+                        <li class="hover:cursor-pointer w-fit">Sitemap</li>
+                    </ul>
+                </div>
+                <div class="w-32 lg:w-44">
+                    <h4 class="py-2">SOCIAL LINKS</h4>
+                    <div class="w-[90%] flex flex-col justify-center">
+                        <div class="flex justify-between mb-6">
+                            <img class="w-[15%] hover:cursor-pointer" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-black-and-white-logos/1000/2018_social_media_popular_app_logo_linkedin-512.png" alt="">
+                            <img class="w-[20%] hover:cursor-pointer" src="data:image/png;base64,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" alt="">
+                            <img class="w-[20%] h-6 scale-125 hover:cursor-pointer" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzFDQvYL8E6VKFExNsdn-ifUWWU6bEk97bXA&s" alt="">
+                            <img class="w-[20%] h-6 scale-x-75 hover:cursor-pointer" src="data:image/jpeg;base64,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" alt="">
+                            <img src="" alt="">
+                        </div>
+                        <img class="mb-4 w-[85%] hover:cursor-pointer" src="https://b.zmtcdn.com/data/webuikit/23e930757c3df49840c482a8638bf5c31556001144.png" alt="">
+                        <img class="mb-4 w-[85%] hover:cursor-pointer" src="https://b.zmtcdn.com/data/webuikit/9f0c85a5e33adb783fa0aef667075f9e1556003622.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center mt-2 h-[15%] font-light text-sm">
+                <p>This is a frontend UI clone of www.zomato.com</p>
+                <p>By - Chirag Chauhan</p>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends here  -->
+
+</body>
+
+</html>
